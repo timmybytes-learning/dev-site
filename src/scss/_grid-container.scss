@@ -1,0 +1,15 @@
+.grid-container {
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: minmax(200px, 1fr) 2fr minmax(200px, 1fr);
+  grid-template-rows: minmax(80px, 0.5fr) 1fr minmax(80px, 0.5fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  height: 100vh;
+}

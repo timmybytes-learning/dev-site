@@ -1,10 +1,18 @@
 import React from "react";
-import Contents from "./Contents";
+import Header from "./Header";
+import Roadmap from "./Roadmap";
+import Content from "./Content";
+import SideBar from "./SideBar";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="">
-      <Contents />
+    <div className="grid-container">
+      <Header />
+      <Roadmap />
+      <Content />
+      <SideBar />
+      <Footer />
     </div>
   );
 }
