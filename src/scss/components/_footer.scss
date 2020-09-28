@@ -1,5 +1,8 @@
 .footer {
-  // position: sticky;
+  display: flex;
+  grid-area: footer;
+  align-items: center;
+  justify-content: center;
   left: 0;
   bottom: 0;
   width: 100%;

@@ -1,3 +1,7 @@
 .sidebar {
   grid-area: side;
+  text-align: left;
+  overflow: scroll;
+  padding: 10px 10px 10px 20px;
+  margin-right: 20px;
 }

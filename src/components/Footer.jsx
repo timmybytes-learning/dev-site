@@ -1,5 +1,10 @@
 import React from "react";
 
 export default function Footer() {
-  return <footer style={{ gridArea: "footer", textAlign: "center" }}>Footer</footer>;
+  var year = new Date().getFullYear();
+  return (
+    <footer className="footer border" style={{ gridArea: "footer", textAlign: "center" }}>
+      &copy; {year}
+    </footer>
+  );
 }

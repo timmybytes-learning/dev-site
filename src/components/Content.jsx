@@ -2,7 +2,7 @@ import React from "react";
 
 function Content() {
   return (
-    <div>
+    <div className="border">
       <p className="content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque, nisi animi molestias
         eum quod ducimus necessitatibus dolore pariatur, nemo velit reiciendis dicta aut temporibus

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Roadmap() {
   return (
-    <nav className="nav">
+    <nav className="nav border">
       <h2>Roadmap</h2>
       <ol>
         <details>

@@ -7,3 +7,21 @@
 @import "./components/content";
 @import "./components/sidebar";
 @import "./components/footer";
+@import "./tree-nav";
+
+.flex {
+  display: flex;
+}
+
+.center-all {
+  align-items: center;
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.border {
+  border: 1px solid black;
+}

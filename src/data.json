@@ -1,0 +1,207 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "topic": "Internet",
+      "summary": "Get the basic understanding of internet, browsers, networks and other relevant knowledge.",
+      "subTopics": [
+        "How does the Internet work?",
+        "What is HTTP?",
+        "Browsers and how they work?",
+        "DNS and how it works?",
+        "What is Domain Name?",
+        "What is hosting?"
+      ],
+      "topicResources": {
+        "read": {
+          "What is Internet?": "https://roadmap.sh/guides/what-is-internet",
+          "What is HTTP and how it evolved?": "https://kamranahmed.info/blog/2016/08/13/http-in-depth/",
+          "HTTP/3: the past, the present, and the future": "https://blog.cloudflare.com/http3-the-past-present-and-future/",
+          "What Is HTTP/3 – Lowdown on the Fast New UDP-Based Protocol": "https://kinsta.com/blog/http3/",
+          "How Browsers Work: Behind the scenes of modern web browsers": "https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/",
+          "How DNS works?": "https://howdns.works/",
+          "DNS in One Picture": "https://roadmap.sh/guides/dns-in-one-picture"
+        },
+        "watch": {
+          "How the internet works in 5 minutes": "https://www.youtube.com/watch?v=7_LPdttKXPc",
+          "DNS as Fast As Possible": "https://www.youtube.com/watch?v=Rck3BALhI5c"
+        }
+      },
+      "topicQuestions": []
+    },
+    {
+      "id": 2,
+      "topic": "HTML",
+      "summary": "HTML provides the skeleton of a webpage. Learn the basics of HTML; learn the basic tags, learn how to write semantic HTML, understand basic SEO, learn how to divide your pages into sections that will help you style them.",
+      "subTopics": [
+        "Learn the basics",
+        "Writing Semantic HTML",
+        "Forms and validation",
+        "Conventions and best practices",
+        "Accessibility",
+        "SEO Basics"
+      ],
+      "topicResources": {
+        "read": {
+          "W3Schools – HTML Tutorial": "https://www.w3schools.com/html/default.asp",
+          "A few HTML tips": "https://hacks.mozilla.org/2016/08/a-few-html-tips/",
+          "Six tips to set up a better HTML document": "https://hackernoon.com/six-tips-to-set-up-a-better-html-document-ud1033z3z",
+          "HTML Semantic Elements": "https://www.w3schools.com/html/html5_semantic_elements.asp",
+          "HTML elements reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+        },
+        "watch": {
+          "HTML Crash Course For Absolute Beginners": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+          "HTML Full Course - Build a Website Tutorial": "https://www.youtube.com/watch?v=pQN-pnXPaVg"
+        }
+      },
+      "topicQuestions": [
+        "What does a doctype do?",
+        "How do you serve a page with content in multiple languages?",
+        "What kind of things must you be wary of when designing or developing for multilingual sites?",
+        "What are data- attributes good for?",
+        "Consider HTML5 as an open web platform. What are the building blocks of HTML5?",
+        "Describe the difference between a cookie, sessionStorage and localStorage.",
+        "Describe the difference between <script>, <script async> and <script defer>.",
+        "Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?",
+        "What is progressive rendering?",
+        "Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.",
+        "Have you used different HTML templating languages before?",
+        "What is the difference between canvas and svg?"
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "CSS",
+      "summary": "With the help of HTML, you create structure for your pages. CSS allows you to style your pages and make them pretty. If you take the analogy of human body, the skeleton would be the HTML, skin would be the CSS and muscles that help us move would be JavaScript - we will learn more about JavaScript in the coming sections.",
+      "subTopics": [
+        "Learn the basics",
+        {
+          "Making layouts": ["Floats", "Positioning", "Display", "Box Model", "CSS Grid", "Flexbox"]
+        },
+        "Responsive design and media queries"
+      ],
+      "topicResources": {
+        "read": { "W3Schools – CSS Tutorial": "https://www.w3schools.com/css/" },
+        "watch": {
+          "CSS Crash Course For Absolute Beginners": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+          "Build An HTML5 Website With A Responsive Layout": "https://www.youtube.com/watch?v=Wm6CUkswsNw",
+          "Flexbox CSS In 20 Minutes": "https://youtu.be/JJSoEo8JSnc?t=46"
+        }
+      },
+      "topicQuestions": [
+        "What is CSS selector specificity and how does it work?",
+        "What’s the difference between “resetting” and “normalizing” CSS? Which would you choose, and why?",
+        "Describe Floats and how they work.",
+        "Describe z-index and how stacking context is formed.",
+        "Describe BFC (Block Formatting Context) and how it works.",
+        "What are the various clearing techniques and which is appropriate for what context?",
+        "How would you approach fixing browser-specific styling issues?",
+        {
+          "How do you serve your pages for feature-constrained browsers?": [
+            "What techniques/processes do you use?"
+          ]
+        },
+        "What are the different ways to visually hide content (and make it available only for screen readers)?",
+        "Have you ever used a grid system, and if so, what do you prefer?",
+        "Have you used or implemented media queries or mobile specific layouts/CSS?",
+        "Are you familiar with styling SVG?",
+        "Can you give an example of an @media property other than screen?",
+        "What are some of the “gotchas” for writing efficient CSS?",
+        {
+          "What are the advantages/disadvantages of using CSS preprocessors?": [
+            "Describe what you like and dislike about the CSS preprocessors you have used."
+          ]
+        },
+        "How would you implement a web design comp that uses non-standard fonts?",
+        "Explain how a browser determines what elements match a CSS selector.",
+        "Describe pseudo-elements and discuss what they are used for.",
+        "Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.",
+        "What does * { box-sizing: border-box; } do? What are its advantages?",
+        "What is the CSS display property and can you give a few examples of its use?",
+        "What’s the difference between inline and inline-block?",
+        "What’s the difference between the “nth-of-type()” and “nth-child()” selectors?",
+        "What’s the difference between a relative, fixed, absolute and statically positioned element?",
+        "What existing CSS frameworks have you used locally, or in production? How would you change/improve them?",
+        "Have you used CSS Grid?",
+        "Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?",
+        "Have you ever worked with retina graphics? If so, when and what techniques did you use?",
+        "Is there any reason you’d want to use translate() instead of /absolute positioning/, or vice-versa? And why?",
+        "How is clearfix css property useful?",
+        "Can you explain the difference between px, em and rem as they relate to font sizing?",
+        "Can you give an example of a pseudo class? Can you provide an example use case for a pseudo class?",
+        "What is the difference between a block level element and an inline element. Can you provide examples of each type of element?"
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "JavaScript",
+      "summary": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. ",
+      "subTopics": [
+        "Syntax and basic constructs",
+        "Learn DOM Manipulation",
+        "Learn fetch, API/AJAX (XHR)",
+        "ES6 & Modular JS",
+        {
+          "Understanding the concepts": [
+            "Hoisting",
+            "Event bubbling",
+            "Scope",
+            "Prototype",
+            "Shadow DOM",
+            "Strict"
+          ]
+        }
+      ],
+      "topicResources": {
+        "read": { "W3Schools – JavaScript Tutorial": "https://www.w3schools.com/js/" },
+        "watch": {
+          "JavaScript Crash Course for Beginners": "https://youtu.be/hdI2bqOjy3c?t=2",
+          "Build a Netflix Landing Page Clone with HTML, CSS & JS": "https://youtu.be/P7t13SGytRk?t=22"
+        }
+      },
+      "topicQuestions": [
+        "Explain event delegation.",
+        {
+          "Explain how this works in JavaScript.": [
+            "Can you give an example of one of the ways that working with this has changed in ES6?"
+          ]
+        },
+        "Explain how prototypal inheritance works.",
+        {
+          "What’s the difference between a variable that is: null, undefined or undeclared?": [
+            "How would you go about checking for any of these states?"
+          ]
+        },
+        "What is a closure, and how/why would you use one?",
+        "What language constructions do you use for iterating over object properties and array items?",
+        "Can you describe the main difference between the Array.forEach() loop and Array.map() methods and why you would pick one versus the other?",
+        "What’s a typical use case for anonymous functions?",
+        "What’s the difference between host objects and native objects?",
+        "xplain the difference between: function Person(){}, var person = Person(), and var person = new Person()?",
+        "xplain the differences on the usage of foo between function foo() {} and var foo = function() {}",
+        "Can you explain what Function.call and Function.apply do? What’s the notable difference between the two?",
+        "Explain Function.prototype.bind.",
+        "What’s the difference between feature detection, feature inference, and using the UA string?",
+        "Explain “hoisting”.",
+        "Describe event bubbling.",
+        "Describe event capturing.",
+        "What’s the difference between an “attribute” and a “property”?",
+        "What are the pros and cons of extending built-in JavaScript objects?",
+        "What is the difference between == and ===?",
+        "Explain the same-origin policy with regards to JavaScript.",
+        "Why is it called a Ternary operator, what does the word “Ternary” indicate?"
+      ]
+    },
+    {
+      "id": 0,
+      "topic": "",
+      "summary": "",
+      "subTopics": [],
+      "topicResources": {
+        "read": {},
+        "watch": {}
+      },
+      "topicQuestions": []
+    }
+  ]
+}

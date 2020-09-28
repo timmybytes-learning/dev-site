@@ -1,0 +1,178 @@
+// <html>
+//   <head>
+//     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
+//   </head>
+//   <body>
+
+// <nav class="tree-nav">
+
+//   <a class="tree-nav__item-title">
+//     <i class="icon ion-scissors"></i>
+//     THE INHERITANCE
+//   </a>
+//   <a class="tree-nav__item-title">
+//     <i class="icon ion-android-star"></i>
+//     The Willful Princess and the Piebald Prince
+//   </a>
+
+//   <details class="tree-nav__item is-expandable">
+//     <summary class="tree-nav__item-title">The Realm of the Elderlings</summary>
+//     <details class="tree-nav__item is-expandable">
+
+//       <summary class="tree-nav__item-title">The Six Duchies</summary>
+//       <details class="tree-nav__item is-expandable">
+//         <summary class="tree-nav__item-title">The Farseer Trilogy</summary>
+//         <div class="tree-nav__item">
+// <table style="width:100%">
+//   <tr>
+//     <th>IP Address</th>
+//     <th>Object Name</th>
+//     <th>Domain Name</th>
+//     <th>Object Class</th>
+//     <th>Status</th>
+//     <th>Mac Address</th>
+//   </tr>
+//   <tr>
+//     <td>Jill</td>
+//     <td>Smith</td>
+//     <td>50</td>
+//   </tr>
+//   <tr>
+//     <td>Eve</td>
+//     <td>Jackson</td>
+//     <td>94</td>
+//   </tr>
+//   <tr>
+//     <td>John</td>
+//     <td>Doe</td>
+//     <td>80</td>
+//   </tr>
+// </table>
+//         </div>
+//       </details>
+
+//       <details class="tree-nav__item is-expandable">
+//         <summary class="tree-nav__item-title">The Tawny Man Trilogy</summary>
+//         <div class="tree-nav__item">
+//           <a class="tree-nav__item-title"><i class="icon ion-cube"></i> FOOL'S ERRAND</a>
+//           <a class="tree-nav__item-title"><i class="icon ion-ios-book"></i> GOLDEN FOOL</a>
+//           <a class="tree-nav__item-title"><i class="icon ion-ios-bookmarks"></i> FOOL'S FATE</a>
+//         </div>
+//       </details>
+
+//       <details class="tree-nav__item is-expandable">
+//         <summary class="tree-nav__item-title">The Fitz and the Fool Trilogy</summary>
+//         <div class="tree-nav__item">
+//           <a class="tree-nav__item-title"><i class="icon ion-ios-bookmarks"></i> FOOL'S ASSASSIN</a>
+//           <a class="tree-nav__item-title"><i class="icon ion-ios-book"></i> FOOL'S QUEST</a>
+//           <a class="tree-nav__item-title"><i class="icon ion-android-bookmark"></i> Assassin's Fate</a>
+//         </div>
+//       </details>
+
+//     </details>
+//   </details>
+
+//   <details class="tree-nav__item is-expandable">
+//     <summary class="tree-nav__item-title">The Soldier Son trilogy</summary>
+//     <div class="tree-nav__item">
+//       <a class="tree-nav__item-title"><i class="icon ion-edit"></i> SHAMAN'S CROSSING</a>
+//       <a class="tree-nav__item-title"><i class="icon ion-paperclip"></i> FOREST MAGE</a>
+//     </div>
+//   </details>
+
+// </nav>
+
+// </body>
+// </html>
+
+/*
+ Only custom marker for summary/details
+ For cross browser compatible styling hide Firefox's marker by setting summary { display: block }
+ and Chrome and Safari's marker by setting ::-webkit-details-marker {display: none;}
+*/
+// summary {
+//   display: block;
+//   cursor: pointer;
+//   outline: 0;
+// }
+
+// summary::-webkit-details-marker {
+//   display: none;
+// }
+
+// body {
+//   background-color: #191c1e;
+//   color: white;
+//   font-size: 1.6rem;
+//   font-family: arial;
+//   margin: 0;
+//   padding: 3rem;
+// }
+
+.tree-nav__item {
+  display: block;
+  white-space: nowrap;
+  color: #ccc;
+  position: relative;
+}
+.tree-nav__item.is-expandable::before {
+  border-left: 1px solid #333;
+  content: "";
+  height: 100%;
+  left: 0.8rem;
+  position: absolute;
+  top: 2.4rem;
+  height: calc(100% - 2.4rem);
+}
+.tree-nav__item .tree-nav__item {
+  margin-left: 2.4rem;
+}
+.tree-nav__item.is-expandable[open] > .tree-nav__item-title::before {
+  font-family: "ionicons";
+  transform: rotate(90deg);
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title {
+  padding-left: 2.4rem;
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title::before {
+  position: absolute;
+  will-change: transform;
+  transition: transform 300ms ease;
+  font-family: "ionicons";
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  content: "\f125";
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.tree-nav__item-title {
+  cursor: pointer;
+  display: block;
+  outline: 0;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  line-height: 3.2rem;
+}
+.tree-nav__item-title .icon {
+  display: inline;
+  padding-left: 1.6rem;
+  margin-right: 0.8rem;
+  color: #666;
+  font-size: 1.4rem;
+  position: relative;
+}
+.tree-nav__item-title .icon::before {
+  top: 0;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.tree-nav__item-title::-webkit-details-marker {
+  display: none;
+}
