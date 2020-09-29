@@ -2,12 +2,6 @@ import React from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function DarkModeToggle() {
-  // const checkboxToggle = document.getElementById("checkbox");
-
-  // checkboxToggle.addEventListener("changed", () => {
-  //   // change theme
-  // });
-
   const handleClick = () => {
     document.body.classList.toggle("dark");
   };
