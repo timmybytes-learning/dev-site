@@ -1,7 +1,9 @@
 @import "./defaults/sizing";
+@import "./defaults/colors";
 @import "./defaults/resets";
 @import "./defaults/fonts";
 @import "./grid-container";
+@import "./components/dark-mode-toggle";
 @import "./components/header";
 @import "./components/nav";
 @import "./components/content";
