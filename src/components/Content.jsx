@@ -33,7 +33,7 @@ function Content() {
       </ol>
       <ol>
         Resources
-        {/* Use function to parse key and values in resList.map() */}
+        {/* TODO: Use function to parse key and values in resList.map() */}
         {resList.map((res) => (
           <li>
             <a href={res}>Link</a>
