@@ -195,7 +195,7 @@ export default function Roadmap() {
               </ol>
             </li>
             <li>
-              CSS-first (don't come with JS componenets by default)
+              CSS-first (don't come with JS components by default)
               <ol>
                 <li>Bootstrap</li>
                 <li>Materialize CSS</li>

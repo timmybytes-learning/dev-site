@@ -1,7 +1,7 @@
 import React from "react";
 // import Data from "../data.json";
 
-// 1. recieve data from json
+// 1. receive data from json
 //  a. create json(s) to contain data
 //   i. group roadmap/interview questions together based on topic
 //   ii. include read/watch resources from roadmap.sh
@@ -32,7 +32,7 @@ import React from "react";
 
 // Mobile version
 //  a. Collapsible hamburger menu
-//  b. overlay menu (when hamburger has been clicked) should render and rerender the same as desktop version
+//  b. overlay menu (when hamburger has been clicked) should render and re-render the same as desktop version
 //  c. Menu should collapse after "final" click
 
 function Nav() {

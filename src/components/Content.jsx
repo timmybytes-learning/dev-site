@@ -6,7 +6,7 @@ function Content() {
   const dataSummary = Data.topics[0].summary;
   const subTopics = Data.topics[0].subTopics;
   const topicResourcesRead = Data.topics[0].topicResources.read;
-  const topicResourcesWatch = Data.topics[0].topicResources.watch;
+  // const topicResourcesWatch = Data.topics[0].topicResources.watch;
 
   function getResourceLinks(obj) {
     let objArr = [];
