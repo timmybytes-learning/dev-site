@@ -1,4 +1,5 @@
 import React from "react";
+// import Data from "../data.json";
 
 // 1. recieve data from json
 //  a. create json(s) to contain data
@@ -35,7 +36,7 @@ import React from "react";
 //  c. Menu should collapse after "final" click
 
 function Nav() {
-  return <nav></nav>;
+  return <div>Nav</div>;
 }
 
 export default Nav;
