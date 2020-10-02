@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from 'react';
 
 export default function Roadmap() {
+  const [selected, setSelected] = useState(0);
+
+  function handleClick(e) {
+    const getValue = Number(e.target.id);
+    setSelected(getValue);
+  }
+
   return (
-    <nav className="nav border">
-      <h2>Roadmap</h2>
+    <nav className='nav border'>
+      <h2>Roadmap {selected}</h2>
       <ol>
         <details>
-          <summary>The Internet</summary>
+          <summary
+            style={
+              selected === 1
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal', color: 'inherit' }
+            }
+            onClick={handleClick}
+            id={1}>
+            The Internet
+          </summary>
           <ol>
             <li>How does the Internet work?</li>
             <li>What is HTTP?</li>
@@ -17,7 +33,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>HTML</summary>
+          <summary
+            style={
+              selected === 2
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={2}>
+            HTML
+          </summary>
           <ol>
             <li>Learn the basics</li>
             <li>Writing Semantic HTML</li>
@@ -28,7 +53,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>CSS</summary>
+          <summary
+            style={
+              selected === 3
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={3}>
+            CSS
+          </summary>
           <ol>
             <li>Learn the Basics</li>
             <li>
@@ -46,7 +80,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>JavaScript</summary>
+          <summary
+            style={
+              selected === 4
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={4}>
+            JavaScript
+          </summary>
           <ol>
             <li>Syntax and Basic Constructs</li>
             <li>Learn DOM Manipulation</li>
@@ -66,7 +109,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Version Control</summary>
+          <summary
+            style={
+              selected === 5
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={5}>
+            Version Control
+          </summary>
           <ol>
             <li>Basic usage of git</li>
             <li>
@@ -80,7 +132,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Web Security Knowledge</summary>
+          <summary
+            style={
+              selected === 6
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={6}>
+            Web Security Knowledge
+          </summary>
           <ol>
             <li>
               Basic Understanding of:
@@ -94,27 +155,63 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Package Managers</summary>
+          <summary
+            style={
+              selected === 7
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={7}>
+            Package Managers
+          </summary>
           <ol>
             <li>npm</li>
             <li>yarn</li>
           </ol>
         </details>
         <details>
-          <summary>CSS Architecture</summary>
+          <summary
+            style={
+              selected === 8
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={8}>
+            CSS Architecture
+          </summary>
           <ol>
             <li>BEM</li>
           </ol>
         </details>
         <details>
-          <summary>CSS Preprocessors</summary>
+          <summary
+            style={
+              selected === 9
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={9}>
+            CSS Preprocessors
+          </summary>
           <ol>
             <li>SASS/SCSS</li>
             <li>PostCSS</li>
           </ol>
         </details>
         <details>
-          <summary>Build Tools</summary>
+          <summary
+            style={
+              selected === 10
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={10}>
+            Build Tools
+          </summary>
           <ol>
             <li>
               Task Runners
@@ -141,7 +238,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Pick a Framework</summary>
+          <summary
+            style={
+              selected === 11
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={11}>
+            Pick a Framework
+          </summary>
           <ol>
             <li>
               React JS
@@ -166,7 +272,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Modern CSS</summary>
+          <summary
+            style={
+              selected === 12
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={12}>
+            Modern CSS
+          </summary>
           <ol>
             <li>Styled Component</li>
             <li>CSS Module</li>
@@ -175,7 +290,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Web Components</summary>
+          <summary
+            style={
+              selected === 13
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={13}>
+            Web Components
+          </summary>
           <ol>
             <li>HTML Templates</li>
             <li>Custom Elements</li>
@@ -183,7 +307,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>CSS Frameworks</summary>
+          <summary
+            style={
+              selected === 14
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={14}>
+            CSS Frameworks
+          </summary>
           <ol>
             <li>
               JS-Based (better to use for JS-based frameworks)
@@ -205,7 +338,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Testing Your Apps</summary>
+          <summary
+            style={
+              selected === 15
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={15}>
+            Testing Your Apps
+          </summary>
           <ol>
             <li>
               Difference Between:
@@ -232,14 +374,32 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Type Checkers</summary>
+          <summary
+            style={
+              selected === 16
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={16}>
+            Type Checkers
+          </summary>
           <ol>
             <li>TypeScript</li>
             <li>Flow</li>
           </ol>
         </details>
         <details>
-          <summary>Progressive Web Apps (PWAs)</summary>
+          <summary
+            style={
+              selected === 17
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={17}>
+            Progressive Web Apps (PWAs)
+          </summary>
           <ol>
             <li>
               Learn Different Web APIs Used in PWAs:
@@ -267,7 +427,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Server Side Rendering</summary>
+          <summary
+            style={
+              selected === 18
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={18}>
+            Server Side Rendering
+          </summary>
           <ol>
             <li>
               React JS
@@ -290,14 +459,32 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>GraphQL</summary>
+          <summary
+            style={
+              selected === 19
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={19}>
+            GraphQL
+          </summary>
           <ol>
             <li>Apollo</li>
             <li>Relay Modern</li>
           </ol>
         </details>
         <details>
-          <summary>Static Site Generators</summary>
+          <summary
+            style={
+              selected === 20
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={20}>
+            Static Site Generators
+          </summary>
           <ol>
             <li>Next.js</li>
             <li>Gatsby.js</li>
@@ -309,7 +496,16 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Mobile Applications</summary>
+          <summary
+            style={
+              selected === 21
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={21}>
+            Mobile Applications
+          </summary>
           <ol>
             <li>React Native</li>
             <li>NativeScript</li>
@@ -318,13 +514,31 @@ export default function Roadmap() {
           </ol>
         </details>
         <details>
-          <summary>Desktop Applications</summary>
+          <summary
+            style={
+              selected === 22
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={22}>
+            Desktop Applications
+          </summary>
           <ol>
             <li>Electron</li>
           </ol>
         </details>
         <details>
-          <summary>Web Assembly</summary>
+          <summary
+            style={
+              selected === 23
+                ? { fontWeight: 'bolder', color: '#dfdfeb', backgroundColor: '#1d1d1d' }
+                : { fontWeight: 'normal' }
+            }
+            onClick={handleClick}
+            id={23}>
+            Web Assembly
+          </summary>
           <ol>
             <li>
               Web Assembly or WASM is the binary instructions generated from higher level languages

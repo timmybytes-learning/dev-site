@@ -1,12 +1,11 @@
 import React from 'react';
 import Data from '../data.json';
 
-function Content() {
-  const dataHeading = Data.topics[0].topic;
-  const dataSummary = Data.topics[0].summary;
-  const subTopics = Data.topics[0].subTopics;
-  const topicResourcesRead = Data.topics[0].topicResources.read;
-  // const topicResourcesWatch = Data.topics[0].topicResources.watch;
+function Content(props) {
+  const dataHeading = Data.topics[props.current].topic;
+  const dataSummary = Data.topics[props.current].summary;
+  const subTopics = Data.topics[props.current].subTopics;
+  const topicResourcesRead = Data.topics[props.current].topicResources.read;
 
   Data.topics.forEach((id) => {
     let arr = [];

@@ -7,11 +7,12 @@ import Footer from './Footer';
 // import Nav from "./Nav";
 
 function App() {
+  const num = 1;
   return (
     <div className='grid-container'>
       <Header />
       <Roadmap />
-      <Content />
+      <Content current={num} />
       <SideBar />
       <Footer />
     </div>

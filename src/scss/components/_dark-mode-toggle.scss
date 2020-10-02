@@ -4,6 +4,10 @@
   transition: transform 0.2s linear;
 }
 
+.dark-mode-switch {
+  padding: 0 $Size4;
+}
+
 .toggle-label {
   background-color: $ColorDark;
   display: flex;
